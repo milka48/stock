@@ -1,0 +1,59 @@
+.nav {
+  font-family: Noto Sans KR;
+  position: sticky;
+  top: 0;
+  height: 100px;
+  width: 100%;
+  padding: 15px 0;
+  z-index: 1000;
+  background-color: hsl(0, 0%, 100%);
+  box-shadow: var(--box-shadow);
+}
+
+p.title {
+  font-size: 30px;
+  font-weight: 700;
+  line-height: 43.44px;
+  text-align: left;
+}
+
+p.title a {
+  color: #af52de;
+}
+
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+ul.menu {
+  display: contents;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  width: 832px;
+  height: 59px;
+  left: 307px;
+  font-size: 18px;
+}
+.button {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.startButton {
+  padding: 8px 16px 8px 16px;
+  border-radius: 8px 0px 0px 0px;
+  border: none;
+  cursor: pointer;
+  border-radius: 15px;
+  background: #af52de;
+  color: #ffffff;
+  text-align: center;
+  font-family: Inter;
+  font-size: 15px;
+  font-style: normal;
+  gap: 8px;
+}

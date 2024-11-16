@@ -1,0 +1,14 @@
+{
+	"stock": [
+		{
+			"stock_id": "005930",
+			"stock_name": "삼성전자",
+			"price": "53500.0"
+		},
+		{
+			"stock_id": "000660",
+			"stock_name": "SK 하이닉스",
+			"price": "130000.0"
+		}
+	]
+}

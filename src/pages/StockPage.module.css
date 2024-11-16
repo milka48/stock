@@ -1,0 +1,203 @@
+.bg {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: -1;
+  background-color: #f6f5ff;
+}
+
+.searchContainer {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  margin: 0px 0;
+}
+
+.searchInput {
+  width: 100%;
+  max-width: 1170px;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-family: Noto Sans KR;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 23.17px;
+  background-color: #eef3f8;
+}
+
+.searchInput::placeholder {
+  font-family: Noto Sans KR;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 23.17px;
+  text-align: left;
+  color: #b1b9c0;
+}
+
+.suggestions {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  border: 1px solid #eef3f8;
+  border-radius: 5px;
+  position: absolute;
+  background-color: #eef3f8;
+  z-index: 1;
+  width: 100%;
+  max-width: 1170px;
+  top: 100%;
+}
+
+.suggestionItem {
+  padding: 10px;
+  cursor: pointer;
+}
+
+.suggestionItem:hover {
+  background-color: #f0f0f0;
+}
+
+.set {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  margin: 0px 0;
+}
+
+.stockRec {
+  width: 1170px;
+  gap: 24px;
+  border-radius: 16px;
+  background: #ffffff;
+  overflow: hidden;
+  margin-top: 20px;
+  position: relative;
+}
+.stockRecDes {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 15px;
+}
+.stockRecDes p {
+  width: 285px;
+  height: 29px;
+  gap: 0px;
+  opacity: 0px;
+  font-family: Noto Sans KR;
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 28.96px;
+  text-align: left;
+  color: #000000;
+  white-space: nowrap;
+}
+
+.button {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 40px;
+}
+
+.analyzeButton {
+  width: 285px;
+  height: 52px;
+  gap: 0px;
+  opacity: 0px;
+  border-radius: 48px 0px 0px 0px;
+  font-family: Noto Sans KR;
+  font-size: 22px;
+  line-height: 31.86px;
+  text-align: left;
+  padding: 8px 16px 8px 16px;
+  border: none;
+  cursor: pointer;
+  border-radius: 15px;
+  background: #af52de;
+  color: #ffffff;
+  text-align: center;
+  font-family: Inter;
+  font-style: normal;
+}
+
+.recButton {
+  border: none;
+  cursor: pointer;
+  background: #af52de;
+  color: #ffffff;
+  font-family: Inter;
+  font-style: normal;
+  width: 98px;
+  height: 35px;
+  border-radius: 16px;
+  font-family: Noto Sans KR;
+  font-size: 18px;
+  line-height: 26.06px;
+}
+
+.cardContainer {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 16px;
+  margin: 20px;
+}
+
+.card {
+  position: relative;
+  background: #f6f5ff;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  text-align: center;
+  padding: 16px;
+  transition: box-shadow 0.3s;
+}
+
+.placeholder {
+  font-family: Noto Sans KR;
+  font-size: 16px;
+  line-height: 23.17px;
+  text-align: center;
+  white-space: nowrap;
+}
+
+.card.selectedCard {
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.3);
+  border: 2px solid #af52de;
+}
+
+.cardContent {
+  padding: 16px;
+}
+
+.cardContent h3 {
+  font-family: Noto Sans KR;
+  font-size: 18px;
+  margin: 0;
+}
+
+.cardContent p {
+  font-family: Noto Sans KR;
+  font-size: 16px;
+  color: #333;
+  margin: 10px 0;
+}
+
+.removeButton {
+  position: absolute;
+  top: 8px;
+  right: 8px;
+  border: none;
+  cursor: pointer;
+  background: #af52de;
+  color: #ffffff;
+  padding: 3px 7px;
+  border-radius: 13px;
+  font-family: Noto Sans KR;
+  font-size: 10px;
+}
